@@ -1,0 +1,46 @@
+{
+	"name": "leftturns",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"process-osm": "tsx scripts/process-osm.ts",
+		"generate-regions": "tsx scripts/generate-regions.ts",
+		"generate-places": "tsx scripts/generate-place-index.ts",
+		"upload-r2": "tsx scripts/upload-r2.ts"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-cloudflare": "^6.0.0",
+		"@sveltejs/kit": "^2.50.2",
+		"@sveltejs/vite-plugin-svelte": "^6.2.4",
+		"@tailwindcss/vite": "^4.0.0",
+		"autoprefixer": "^10.4.20",
+		"svelte": "^5.51.0",
+		"svelte-check": "^4.3.6",
+		"tailwindcss": "^4.0.0",
+		"tsx": "^4.19.0",
+		"typescript": "^5.9.3",
+		"vite": "^7.3.1"
+	},
+	"dependencies": {
+		"@protomaps/basemaps": "^4.0.0",
+		"@turf/bearing": "^7.0.0",
+		"@turf/distance": "^7.0.0",
+		"bits-ui": "^1.0.0",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.1.0",
+		"cmdk-sv": "^0.1.0",
+		"lucide-svelte": "^0.474.0",
+		"maplibre-gl": "^5.0.0",
+		"msgpackr": "^1.11.0",
+		"pmtiles": "^4.0.0",
+		"tailwind-merge": "^3.0.0",
+		"tailwind-variants": "^1.0.0"
+	}
+}
