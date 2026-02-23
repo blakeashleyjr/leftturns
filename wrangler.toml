@@ -1,0 +1,9 @@
+name = "leftturns"
+compatibility_date = "2025-01-01"
+
+[site]
+bucket = ".svelte-kit/cloudflare"
+
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "leftturns-data"
